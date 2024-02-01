@@ -1,9 +1,12 @@
 import React from 'react';
 import '../styles/App.css';
 import '../styles/Nav.css';
-import Curb from '../assets/curb.png'
+import Curb from '../assets/curb.webp'
 import Menu from '../assets/menu.png'
 import Logo from '../assets/logo.svg'
+import Main1 from '../assets/main1.webp'
+import Main2 from '../assets/main2.webp'
+import Main3 from '../assets/main3.webp'
 import { useRef, useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Loading from '../components/loading';
@@ -106,9 +109,16 @@ const Default = () => {
                 We love <div className='pl-1 animate-bounce inline-block text-[#A89680] font-extrabold'><button onClick={() => scrollToSection(coffee)}>coffee.</button></div> <br />
                 So do you.
             </div>
-            <div className='w-[35vh] border-solid rounded-2xl shadow-2xl'>
+            {/* Mobile */}
+            <div className='w-[35vh] border-solid rounded-2xl shadow-2xl lg:hidden'>
                 <img src={Curb} alt="" onLoad={()=>setIsLoading(false)}/>
             </div>
+            {/* Mobile */}
+            {/*Desktop */}
+                {/* Carousel */}
+                 
+                {/* Carousel */}
+            {/*Desktop */}
             <div className='font-[heebo] text-3xl text-justify px-5 mt-10'>
             we got a lot of <div className='inline-block text-[#A89680] font-extrabold'>good</div> food and beverages actually...
             </div>
@@ -135,7 +145,7 @@ const Default = () => {
                 <div className='animate-bounce'>that's right come grab your coffee.</div>
             </div>
             {/*Desktop */}
-            <div className='w-[35vh] shadow-2xl mt-5 lg:w-[50vh]'>
+            <div className='w-[35vh] shadow-2xl mt-5 lg:w-[50vh] border-white border-8 rounded-2xl'>
             <img src={Menu} alt="" />
             </div>
             <div className='font-[heebo] text-3xl text-start px-5 mt-10 lg:hidden'>
