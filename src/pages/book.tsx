@@ -1,73 +1,99 @@
-import React from "react";
+import React, { useState } from "react";
 import Nav from '../components/nav'
+import '../styles/booking.css'
+import Curly from '../assets/curved-arrow.svg'
+import Main1 from '../assets/main1.webp'
+import Main2 from '../assets/main2.webp'
+import Main3 from '../assets/main3.webp'
+import Loading from "../components/loading";
 
 const Book = () => {
+    const [isLoading, setIsLoading] = useState(true);
+    const loading = (x: boolean)=> {
+        if (x) {
+            return 'hidden'
+        } else {
+            return 'visible'
+        }
+    }
+    const done = (x: boolean)=> {
+        if (!x) {
+            return 'hidden'
+        } else {
+            return 'visible'
+        }
+    }
     return(
-        <section className="bg-gradient-to-b from-[white] to-[#F0E1A8]">
+        <div>
             <Nav />
-            <div className="">
-                <div className="h-dvh w-[80%] mx-auto flex flex-col justify-center gap-[10vh]">
-                    <div>
-                        <div className="text-5xl font-[Rubik] text-center">
-                            NEED A BOOKING?
-                        </div>
-                        <div className="text-3xl font-[heebo] mt-5 text-center">
-                            you can rent out the curbside tree house for your meetings, get togethers, and more...
-                        </div>
-                    </div>
-                    <div>
-                        {/* Carousel */}
-                        <div id="controls-carousel" className="relative w-full" data-carousel="static">
-                            <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-                                <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                                    <img src="" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
-                                </div>
-                                <div className="hidden duration-700 ease-in-out" data-carousel-item="active">
-                                    <img src="" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
-                                </div>
-                                <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                                    <img src="" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
-                                </div>
-                                <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                                    <img src="" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
-                                </div>
-                                <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                                    <img src="" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
-                                </div>
+                {/*Loading Screen */}
+                <div className={done(isLoading)}>
+                    <Loading/>
+                </div>
+                {/*Loading Screen */}
+            <section className="bg-gradient-to-t from-[white] to-[#F0E1A8]">
+                <div id="body" className={(loading(isLoading))}>
+                    <div className="h-dvh w-[80%] mx-auto flex flex-col items-center justify-center gap-[10vh]">
+                        <div>
+                            <div className="text-5xl font-[Rubik] text-center">
+                                NEED A BOOKING?
                             </div>
-                            <button type="button" className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                                <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                                    <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                                    </svg>
-                                    <span className="sr-only">Previous</span>
-                                </span>
-                            </button>
-                            <button type="button" className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                                <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                                    <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                                    </svg>
-                                    <span className="sr-only">Next</span>
-                                </span>
-                            </button>
+                            <div className="text-3xl font-[heebo] mt-5 text-center">
+                                you can rent out the curbside tree house for your meetings, get togethers, and more...
+                            </div>
                         </div>
-                        {/* Carousel */}
-                    </div>
-                    <div>
-                        <div className="text-5xl font-[Rubik] text-center">
-                                JUST LET US KNOW AHEAD OF TIME.
+                        <div>
+                            <div className="text-5xl font-[Rubik] text-center">
+                                    JUST LET US KNOW AHEAD OF TIME.
+                            </div>
+                            <div className="text-3xl font-[heebo] mt-5 text-center">
+                                we also do pop-ups so you can physically take us anywhere. 
+                            </div>
                         </div>
-                        <div className="text-3xl font-[heebo] mt-5 text-center">
-                            we also do pop-ups so you can physically take use anywhere. 
-                        </div>
-                    </div>
-                    <div>
-
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <section className="bg-gradient-to-b from-[white] to-[white]">
+                <div className="flex flex-row items-center justify-center mx-auto h-[30vh]">
+                    <div className="text-3xl font-[rubik] text-center font-extrabold lg:text-5xl">
+                        you can always contact us through these platforms.
+                    </div>
+                </div>
+                <div className="h-[40vh] w-[80%] mx-auto flex justify-center gap-[10vh] flex-row">
+                    <div className="">
+                        <a target="_blank" rel="noreferrer" 
+                        className='' 
+                        href="https://www.facebook.com/Curbside.bcd/">
+                            <i className="animate-bounce transition-all transform lg:hover:scale-[1.1] transition-all hover:text-gray-700 text-8xl fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div className="">
+                        <a target="_blank" rel="noreferrer" 
+                        className='' 
+                        href="https://www.instagram.com/curbside.bcd/">
+                            <i className="animate-bounce transition-all transition-all transform lg:hover:scale-[1.1] hover:text-gray-700 text-8xl fa-brands fa-facebook-f"></i></a>
+                    </div>
+
+                </div>
+            </section>
+            <section className="bg-gradient-to-b from-[white] to-[#F0E1A8]">
+                <div className="flex flex-row items-center justify-center mx-auto">
+                    <div className="text-5xl font-[rubik] text-center font-extrabold">
+                        some snaps.
+                    </div>
+                </div>
+                <div className="h-dvh w-[80%] mx-auto flex flex-col items-center justify-center gap-[10vh] lg:flex-row">
+                    <div className="w-[40vh] border-white border-8 rounded-lg shadow-2xl">
+                                <img src={Main1} alt="" />
+                    </div>
+                    <div className="hidden w-[40vh] border-white border-8 rounded-lg lg:inline-block shadow-2xl">
+                                <img src={Main3} alt="" />
+                    </div>
+                    <div className="w-[40vh] border-white border-8 rounded-lg shadow-2xl" onLoad={()=>setIsLoading(false)}>
+                                <img src={Main2} alt="" />
+                    </div>
+                </div>
+            </section>
+        </div>
     );
 }
 

@@ -110,15 +110,10 @@ const Default = () => {
                 So do you.
             </div>
             {/* Mobile */}
-            <div className='w-[35vh] border-solid rounded-2xl shadow-2xl lg:hidden'>
+            <div className='w-[35vh] border-solid rounded-2xl shadow-2xl'>
                 <img src={Curb} alt="" onLoad={()=>setIsLoading(false)}/>
             </div>
             {/* Mobile */}
-            {/*Desktop */}
-                {/* Carousel */}
-                 
-                {/* Carousel */}
-            {/*Desktop */}
             <div className='font-[heebo] text-3xl text-justify px-5 mt-10'>
             we got a lot of <div className='inline-block text-[#A89680] font-extrabold'>good</div> food and beverages actually...
             </div>
