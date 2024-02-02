@@ -78,13 +78,13 @@ const Book = () => {
                         <div className="">
                             <a target="_blank" rel="noreferrer" 
                             className='' 
-                            href="https://www.facebook.com/Curbside.bcd/">
+                            href="https://www.instagram.com/curbside.bcd/">
                                 <i className="animate-bounce transition-all transform lg:hover:scale-[1.1] transition-all hover:text-gray-700 text-8xl fa-brands fa-instagram"></i></a>
                         </div>
                         <div className="">
                             <a target="_blank" rel="noreferrer" 
                             className='' 
-                            href="https://www.instagram.com/curbside.bcd/">
+                            href="https://www.facebook.com/Curbside.bcd/">
                                 <i className="animate-bounce transition-all transition-all transform lg:hover:scale-[1.1] hover:text-gray-700 text-8xl fa-brands fa-facebook-f"></i></a>
                         </div>
                     </div>
