@@ -2,7 +2,8 @@ import React from 'react';
 import '../styles/App.css';
 import '../styles/Nav.css';
 import Curb from '../assets/curb.webp'
-import Menu from '../assets/menu.png'
+import Menu from '../assets/menu.jpg'
+import Menu2 from '../assets/menu2.jpg'
 import Logo from '../assets/logo.svg'
 import Main1 from '../assets/main1.webp'
 import Main2 from '../assets/main2.webp'
@@ -27,6 +28,7 @@ const Default = () => {
     const home = useRef(null);
     const coffee = useRef(null);
     const about = useRef(null);
+    const [menu, setMenu] = useState(true);
     const [toggle, setToggle] = useState('hidden opacity-0');
     const [isLoading, setIsLoading] = useState(true);
     const loading = (x: boolean)=> {
@@ -140,8 +142,9 @@ const Default = () => {
                 <div className='animate-bounce'>that's right come grab your coffee.</div>
             </div>
             {/*Desktop */}
-            <div className='w-[35vh] shadow-2xl mt-5 lg:w-[50vh] border-white border-8 rounded-2xl'>
-            <img src={Menu} alt="" />
+            <div className='w-[45vh] lg:w-[55vh] shadow-2xl mt-5 lg:w-[50vh] border-white border-8 rounded-2xl relative'>
+            <img className={(menu ? "hidden" : "visible")} src={Menu2} alt="" />
+            <img className={(menu ? "visible" : "hidden")} src={Menu} alt="" /> <div className='absolute right-0 top-[11rem] lg:top-[18rem] lg:mr-[-5rem]'><button onClick={ ()=> menu ? setMenu(false) : setMenu(true)}><i className="animate-bounce fa-solid fa-arrow-right text-2xl lg:text-5xl"></i></button></div>
             </div>
             <div className='font-[heebo] text-3xl text-start px-5 mt-10 lg:hidden'>
             <div className='font-[rubik] font-extrabold mb-2'>we're open</div> 
