@@ -24,7 +24,7 @@ const Nav = ()=> {
                         <li className="transition-all transform hover:scale-[1.1] text-gray-800 hover:text-gray-500"><Link to="/welcome/home">Home</Link></li>
                         <li className="transition-all transform hover:scale-[1.1] text-gray-800 hover:text-gray-500"><Link to="/welcome/coffee">Coffee</Link></li>
                         <li className="transition-all transform hover:scale-[1.1] text-gray-800 hover:text-gray-500"><Link to="/welcome/about">About Us</Link></li>
-                        <li className="transition-all transform hover:scale-[1.1] bg-gray-200 border-1 rounded-xl px-3 py-1 ml-[2vh] hover:bg-gray-300"><Link to="/welcome/about">Book the curb<i className='fa fa-paper-plane ml-2'></i></Link></li>
+                        <li className="transition-all transform hover:scale-[1.1] bg-gray-200 border-1 rounded-xl px-3 py-1 ml-[2vh] hover:bg-gray-300"><Link to="/bookings">Book the curb<i className='fa fa-paper-plane ml-2'></i></Link></li>
                     </ul>
                 </div>
             </div>
@@ -34,7 +34,7 @@ const Nav = ()=> {
                 <li className="transition-all transform hover:scale-[1.05] hover:bg-gray-200"><Link to="/welcome/home">Home</Link></li>
                 <li className="transition-all transform hover:scale-[1.05] hover:bg-gray-200"><Link to="/welcome/coffee">Coffee</Link></li>
                 <li className="transition-all transform hover:scale-[1.05] hover:bg-gray-200"><Link to="/welcome/about">About Us</Link></li>
-                <li className="pl-3 transition-all transform hover:scale-[1.05] hover:bg-gray-200"><button>Book the curb<i className='fa fa-paper-plane ml-2'></i></button></li>
+                <li className="pl-3 transition-all transform hover:scale-[1.05] hover:bg-gray-200"><Link to="/bookings">Book the curb<i className='fa fa-paper-plane ml-2'></i></Link></li>
             </ul>
         </div>
     </div>
