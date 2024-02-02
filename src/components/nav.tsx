@@ -21,20 +21,20 @@ const Nav = ()=> {
                 </button>
                 <div id="buttons-full">
                     <ul className="hidden md:flex items-center gap-6">
-                        <li className="transition-all transform hover:scale-[1.1] text-gray-800 hover:text-gray-500"><Link to="/welcome/home">Home</Link></li>
-                        <li className="transition-all transform hover:scale-[1.1] text-gray-800 hover:text-gray-500"><Link to="/welcome/coffee">Coffee</Link></li>
-                        <li className="transition-all transform hover:scale-[1.1] text-gray-800 hover:text-gray-500"><Link to="/welcome/about">About Us</Link></li>
-                        <li className="transition-all transform hover:scale-[1.1] bg-gray-200 border-1 rounded-xl px-3 py-1 ml-[2vh] hover:bg-gray-300"><Link to="/bookings">Book the curb<i className='fa fa-paper-plane ml-2'></i></Link></li>
+                        <li className="transition-all transform hover:scale-[1.1] text-gray-800 hover:text-gray-500"><Link to="spot/welcome/home">Home</Link></li>
+                        <li className="transition-all transform hover:scale-[1.1] text-gray-800 hover:text-gray-500"><Link to="spot/welcome/coffee">Coffee</Link></li>
+                        <li className="transition-all transform hover:scale-[1.1] text-gray-800 hover:text-gray-500"><Link to="spot/welcome/about">About Us</Link></li>
+                        <li className="transition-all transform hover:scale-[1.1] bg-gray-200 border-1 rounded-xl px-3 py-1 ml-[2vh] hover:bg-gray-300"><Link to="spot/bookings">Book the curb<i className='fa fa-paper-plane ml-2'></i></Link></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <div id="buttons-mob" className={toggle + "top-0 shadow-2xl border-b"}>
             <ul className="overflow-hidden block md:hidden text-center">
-                <li className="transition-all transform hover:scale-[1.05] hover:bg-gray-200"><Link to="/welcome/home">Home</Link></li>
-                <li className="transition-all transform hover:scale-[1.05] hover:bg-gray-200"><Link to="/welcome/coffee">Coffee</Link></li>
-                <li className="transition-all transform hover:scale-[1.05] hover:bg-gray-200"><Link to="/welcome/about">About Us</Link></li>
-                <li className="pl-3 transition-all transform hover:scale-[1.05] hover:bg-gray-200"><Link to="/bookings">Book the curb<i className='fa fa-paper-plane ml-2'></i></Link></li>
+                <li className="transition-all transform hover:scale-[1.05] hover:bg-gray-200"><Link to="spot/welcome/home">Home</Link></li>
+                <li className="transition-all transform hover:scale-[1.05] hover:bg-gray-200"><Link to="spot/welcome/coffee">Coffee</Link></li>
+                <li className="transition-all transform hover:scale-[1.05] hover:bg-gray-200"><Link to="spot/welcome/about">About Us</Link></li>
+                <li className="pl-3 transition-all transform hover:scale-[1.05] hover:bg-gray-200"><Link to="spot/bookings">Book the curb<i className='fa fa-paper-plane ml-2'></i></Link></li>
             </ul>
         </div>
     </div>
