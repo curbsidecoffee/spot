@@ -17,6 +17,7 @@ function App() {
         <Header />
         <Routes>
             <Route index element={<Default/>} />
+            <Route path="/spot" element={<Default/>} />
             <Route path="/home" element={<Default/>} />
             <Route path="/welcome/:section" element={<Default/>} />
             <Route path="/bookings" element={<Book/>} />
