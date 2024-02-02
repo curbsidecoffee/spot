@@ -70,8 +70,8 @@ const Default = () => {
         <div className="z-[1] sticky top-0 shadow-2xl bg-white">
         <nav className="flex justify-between items-center w-[80%] mx-auto h-[8vh]">
             <div className="flex items-center">
-                <Link to="/" className="hidden lg:block transition-all transform hover:scale-[1.2] w-[5vh]"><img src={Logo} alt="LOGO" /></Link>
-                <Link to="/" className="transition-all font-[Rubik] text-2xl hover:text-gray-600">curbside coffee.</Link>
+                <Link to="/spot" className="hidden lg:block transition-all transform hover:scale-[1.2] w-[5vh]"><img src={Logo} alt="LOGO" /></Link>
+                <Link to="/spot" className="transition-all font-[Rubik] text-2xl hover:text-gray-600">curbside coffee.</Link>
             </div>
             <div className="">
                 <button onClick={() => (toggle==='hidden opacity-0') ? setToggle('visible opacity-100') : setToggle('hidden opacity-0')} data-collapse-toggle="buttons-full" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden 

@@ -10,7 +10,7 @@ function Footer() {
             <a target="_blank" rel="noreferrer" className='transition-all transform hover:scale-[1.1]' href="https://www.facebook.com/Curbside.bcd/"><i className="transition-all hover:text-gray-700 text-2xl fa-brands fa-instagram"></i>instagram.</a>
         </div>
         <div className="flex flex-col items-center justify-center bottom-0">
-                <Link to="/" className="transition-all font-[Rubik] text-s hover:text-gray-700">curbside coffee.</Link>
+                <Link to="/spot" className="transition-all font-[Rubik] text-s hover:text-gray-700">curbside coffee.</Link>
         </div>
       </div>
     );
