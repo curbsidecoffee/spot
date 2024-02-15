@@ -48,7 +48,7 @@ const Book = () => {
             <div id="body" className={(loading(isLoading))}>
                 <section className="bg-gradient-to-t from-[white] to-[#F0E1A8]">
                     <div>
-                        <div ref={top} className="h-dvh w-[80%] mx-auto flex flex-col items-center justify-center gap-[10vh]">
+                        <div ref={top} className="w-[80%] mx-auto flex flex-col items-center justify-center gap-[10vh] h-[750px]">
                             <div>
                                 <div className="text-5xl font-[Rubik] text-center">
                                     NEED A BOOKING?
@@ -68,13 +68,13 @@ const Book = () => {
                         </div>
                     </div>
                 </section>
-                <section className="bg-gradient-to-b from-[white] to-[white]">
-                    <div className="flex flex-row items-center justify-center mx-auto h-[30vh]">
+                <section className="bg-gradient-to-b from-[white] to-[white] h-[600px]">
+                    <div className="flex flex-row items-center justify-center mx-auto h-[200px]">
                         <div className="text-3xl font-[rubik] text-center font-extrabold lg:text-5xl">
                             you can always contact us through these platforms.
                         </div>
                     </div>
-                    <div className="h-[12vh] w-[80%] mx-auto flex justify-center gap-[10vh] flex-row">
+                    <div className="h-[100px] w-[80%] mx-auto flex justify-center gap-[10vh] flex-row">
                         <div className="">
                             <a target="_blank" rel="noreferrer" 
                             className='' 
@@ -88,14 +88,14 @@ const Book = () => {
                                 <i className="animate-bounce transition-all transition-all transform lg:hover:scale-[1.1] hover:text-gray-700 text-8xl fa-brands fa-facebook-f"></i></a>
                         </div>
                     </div>
-                    <div className="flex flex-row items-center justify-center mx-auto h-[15vh]">
+                    <div className="flex flex-row items-center justify-center mx-auto py-[2rem]">
                         <div className="text-2xl font-[heebo] text-center font-extrabold lg:text-5xl">
                             curbside.coffee.bcd@gmail.com
                         </div>
                     </div>
                 </section>
                 <section className="bg-gradient-to-b from-[white] to-[#F0E1A8]">
-                    <div className="flex flex-row items-end justify-center mx-auto h-[40vh]">
+                    <div className="flex flex-row items-end justify-center mx-auto py-[2rem]">
                         <div className="text-5xl font-[rubik] text-center font-extrabold">
                             some snaps.
                         </div>

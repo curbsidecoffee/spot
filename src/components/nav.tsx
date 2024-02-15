@@ -9,7 +9,7 @@ const Nav = ()=> {
 <div className="z-[1] sticky top-0 shadow-2xl bg-white">
     {/*Nav Bar */}
     <div>
-        <nav className="flex justify-between items-center w-[80%] mx-auto h-[8vh]">
+        <nav className="flex justify-between items-center w-[80%] mx-auto py-[0.8rem]">
             <div className="flex items-center">
                 <Link className="hidden lg:block transition-all transform hover:scale-[1.2] w-[5vh]" to="/spot"><img src={Logo} alt="LOGO" /></Link>
                 <Link className="transition-all font-[Rubik] text-2xl hover:text-gray-600" to="/spot">curbside coffee.</Link>

@@ -68,7 +68,7 @@ const Default = () => {
 <div>
         {/*Nav Bar */}
         <div className="z-[1] sticky top-0 shadow-2xl bg-white">
-        <nav className="flex justify-between items-center w-[80%] mx-auto h-[8vh]">
+        <nav className="flex justify-between items-center w-[80%] mx-auto py-[0.8rem]">
             <div className="flex items-center">
                 <Link to="/spot" className="hidden lg:block transition-all transform hover:scale-[1.2] w-[5vh]"><img src={Logo} alt="LOGO" /></Link>
                 <Link to="/spot" className="transition-all font-[Rubik] text-2xl hover:text-gray-600">curbside coffee.</Link>
@@ -106,7 +106,7 @@ const Default = () => {
     <div id="body" className={(loading(isLoading))}>
         <div className='overflow-auto cursor-default'>
         <section ref={home} className='bg-gradient-to-b from-[#EDEDE9] to-[#F5EBE0]'>
-        <div className='flex flex-col w-[80%] mx-auto h-dvh items-center justify-center text-center gap-[2rem]'>
+        <div className='flex flex-col w-[80%] mx-auto h-[750px] items-center justify-center text-center gap-[2rem]'>
             <div className='font-[heebo] text-4xl'>
                 We love <div className='pl-1 animate-bounce inline-block text-[#A89680] font-extrabold'><button onClick={() => scrollToSection(coffee)}>coffee.</button></div> <br />
                 So do you.
@@ -122,7 +122,7 @@ const Default = () => {
         </div>
         </section>
         <section ref={coffee} className='bg-gradient-to-b from-[#F5EBE0] to-[#E3D5CA]'>
-        <div className='flex flex-col w-[80%] mx-auto h-dvh items-center justify-center gap-[1vh] lg:flex-row lg:w-[60%] lg:justify-between'>
+        <div className='py-[3rem] flex flex-col w-[80%] mx-auto  items-center justify-center gap-[1vh] lg:flex-row lg:w-[60%] lg:justify-between'>
             <div className='font-[rubik] text-3xl text-center font-extrabold lg:hidden'>
                 Here's our menu
             </div>
@@ -153,7 +153,7 @@ const Default = () => {
         </div>
         </section>
         <section ref={about} className='bg-gradient-to-b from-[#E3D5CA] to-[#D6CCC2]'>
-        <div className='flex flex-col w-[80%] mx-auto justify-center h-dvh gap-[2vh] lg:hidden'>
+        <div className='flex flex-col w-[80%] mx-auto justify-center py-[3rem] gap-[2vh] lg:hidden'>
             <div className='font-[rubik] text-4xl text-start'>
                 WHAT IS <div className='animate-pulse inline-block'>CURBSIDE?</div>
             </div>
